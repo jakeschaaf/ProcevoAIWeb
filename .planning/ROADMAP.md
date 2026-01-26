@@ -17,8 +17,8 @@ This roadmap transforms Procevo AI's vision into a deployed marketing website th
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Infrastructure** - Next.js 16 + Tailwind v4 + Vercel deployment pipeline ✓
-- [ ] **Phase 2: Core Marketing Pages** - Homepage, Services, About pages with mobile-responsive layouts
-- [ ] **Phase 3: Trust & Credibility Layer** - Case studies and testimonials with metrics
+- [x] **Phase 2: Core Marketing Pages** - Homepage, Services, About pages with mobile-responsive layouts ✓
+- [x] **Phase 3: Trust & Credibility Layer** - Case studies and testimonials with metrics ✓
 - [ ] **Phase 4: Lead Capture System** - Contact form with email + Telegram notifications
 - [ ] **Phase 5: Content Refinement** - Results-focused messaging across all pages
 - [ ] **Phase 6: SEO & Performance Optimization** - Meta tags, structured data, performance tuning
@@ -109,8 +109,8 @@ Plans:
 **Plans:** 2 plans in 2 waves
 
 Plans:
-- [ ] 03-01-PLAN.md — Create CaseStudyCard component and invoice splitter data (Wave 1)
-- [ ] 03-02-PLAN.md — Integrate case studies across site and update navigation (Wave 2)
+- [x] 03-01-PLAN.md — Create CaseStudyCard component and invoice splitter data (Wave 1) ✓
+- [x] 03-02-PLAN.md — Integrate case studies across site and update navigation (Wave 2) ✓
 
 ---
 
@@ -278,7 +278,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 2/2 | ✓ Complete | 2026-01-26 |
 | 2. Core Marketing Pages | 5/5 | ✓ Complete | 2026-01-26 |
-| 3. Trust & Credibility Layer | 0/2 | Planned | - |
+| 3. Trust & Credibility Layer | 2/2 | ✓ Complete | 2026-01-26 |
 | 4. Lead Capture System | 0/0 | Not started | - |
 | 5. Content Refinement | 0/0 | Not started | - |
 | 6. SEO & Performance Optimization | 0/0 | Not started | - |
@@ -286,4 +286,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 8. Final Polish & Launch | 0/0 | Not started | - |
 
 ---
-*Last updated: 2026-01-26 after Phase 2 completion*
+*Last updated: 2026-01-26 after Phase 3 completion*

@@ -21,9 +21,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Trust & Credibility
 
-- [ ] **TRUST-01**: Case study section with at least one example (invoice splitter)
-- [ ] **TRUST-02**: Case studies follow Problem-Solution-Result framework with specific outcomes
-- [ ] **TRUST-03**: Process transparency section explaining how Procevo works with clients
+- [x] **TRUST-01**: Case study section with at least one example (invoice splitter) ✓
+- [x] **TRUST-02**: Case studies follow Problem-Solution-Result framework with specific outcomes ✓
+- [x] **TRUST-03**: Process transparency section explaining how Procevo works with clients ✓
 
 ### Lead Capture
 
@@ -98,9 +98,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-07 | Phase 2 | Complete |
 | PAGE-08 | Phase 1, 2 | Complete |
 | PAGE-09 | Phase 2 | Complete |
-| TRUST-01 | Phase 3 | Pending |
-| TRUST-02 | Phase 3 | Pending |
-| TRUST-03 | Phase 3 | Pending |
+| TRUST-01 | Phase 3 | Complete |
+| TRUST-02 | Phase 3 | Complete |
+| TRUST-03 | Phase 3 | Complete |
 | LEAD-01 | Phase 4 | Pending |
 | LEAD-02 | Phase 4 | Pending |
 | LEAD-03 | Phase 4 | Pending |
@@ -125,4 +125,4 @@ Note: PAGE-08 (mobile-responsive) spans Phase 1 (foundation setup) and Phase 2 (
 
 ---
 *Requirements defined: 2026-01-26*
-*Last updated: 2026-01-26 after Phase 2 completion*
+*Last updated: 2026-01-26 after Phase 3 completion*
