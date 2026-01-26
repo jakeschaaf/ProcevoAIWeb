@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { Hero } from '@/components/hero';
 import { ServiceCard } from '@/components/service-card';
+import { CaseStudyCard } from '@/components/case-study-card';
 import { CTA } from '@/components/cta';
 import { Container } from '@/components/ui/container';
+import { invoiceSplitterCaseStudy } from '@/data/case-studies';
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -122,6 +124,26 @@ export default function ServicesPage() {
                 </p>
               </div>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-20 md:py-28 bg-white">
+        <Container size="lg">
+          <div className="text-center mb-12">
+            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
+              See It In Action
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight mb-4">
+              Real Projects, Real Results
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Here&apos;s what we&apos;ve built for companies just like yours.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <CaseStudyCard {...invoiceSplitterCaseStudy} />
           </div>
         </Container>
       </section>
