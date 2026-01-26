@@ -11,17 +11,17 @@ See: .planning/PROJECT.md (updated 2026-01-26)
 ## Current Position
 
 Phase: 3 of 8 (Trust & Credibility Layer)
-Plan: 1 of 4 in current phase
+Plan: 2 of 4 in current phase
 Status: In progress
-Last activity: 2026-01-26 — Completed 03-01-PLAN.md (Case study card component and data)
+Last activity: 2026-01-26 — Completed 03-02-PLAN.md (Case study site integration)
 
-Progress: [████████░░] 80% (8 of ~10 plans)
+Progress: [████████░░] 82% (9 of ~11 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 3.5 min
+- Total plans completed: 9
+- Average duration: 3.3 min
 - Total execution time: 0.5 hours
 
 **By Phase:**
@@ -30,11 +30,11 @@ Progress: [████████░░] 80% (8 of ~10 plans)
 |-------|-------|-------|----------|
 | 01-foundation-infrastructure | 2 | 13min | 6.5min |
 | 02-core-marketing-pages | 5 | 13min | 2.6min |
-| 03-trust-credibility-layer | 1 | 2min | 2min |
+| 03-trust-credibility-layer | 2 | 4min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (2min), 02-03 (2min), 02-04 (1min), 02-05 (7min), 03-01 (2min)
-- Trend: Fast execution continues, component patterns well-established
+- Last 5 plans: 02-03 (2min), 02-04 (1min), 02-05 (7min), 03-01 (2min), 03-02 (2min)
+- Trend: Fast execution continues, integration patterns well-established
 
 *Updated after each plan completion*
 
@@ -71,6 +71,9 @@ Recent decisions affecting current work:
 - CaseStudyCard styling matches ServiceCard — Visual consistency across card components
 - PSR (Problem-Solution-Result) framework — Industry-standard B2B case study structure
 - Data files in /data directory — Structured content separated from components
+- Hybrid case study placement — Hub + embedded for maximum discoverability
+- Case study on homepage between PainPoints and CTA — Social proof after pain identification
+- Case study on services after process steps — Contextual proof near offerings
 
 ### Pending Todos
 
@@ -82,16 +85,17 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-26T17:21:00Z
-Stopped at: Completed 03-01-PLAN.md (Case study card component and data)
+Last session: 2026-01-26T17:25:00Z
+Stopped at: Completed 03-02-PLAN.md (Case study site integration)
 Resume file: None
 
 ## Phase Status
 
 **Phase 3 (Trust & Credibility Layer): IN PROGRESS**
 - Plan 03-01 complete: CaseStudyCard component and invoice splitter data
-- Components ready for integration on homepage and services page
-- Remaining: Process steps, homepage integration, services page integration
+- Plan 03-02 complete: Case study integration on homepage, services, dedicated page, navigation
+- Trust signals now distributed across homepage, services, and dedicated /case-studies page
+- Remaining: Additional trust signals and process visualization
 
 ---
-*Last updated: 2026-01-26 after 03-01 plan completion*
+*Last updated: 2026-01-26 after 03-02 plan completion*
