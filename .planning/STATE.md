@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-01-26)
 
 ## Current Position
 
-Phase: 1 of 8 (Foundation & Infrastructure)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-01-26 — Completed 01-02-PLAN.md (Vercel deployment)
+Phase: 2 of 8 (Core Marketing Pages)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-01-26 — Completed 02-01-PLAN.md (Shared components)
 
-Progress: [██████████] 100%
+Progress: [████░░░░░░] 37.5%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 6.5 min
+- Total plans completed: 3
+- Average duration: 4.7 min
 - Total execution time: 0.2 hours
 
 **By Phase:**
@@ -29,10 +29,11 @@ Progress: [██████████] 100%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation-infrastructure | 2 | 13min | 6.5min |
+| 02-core-marketing-pages | 1 | 1min | 1min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (5min), 01-02 (8min)
-- Trend: Steady progress
+- Last 5 plans: 01-01 (5min), 01-02 (8min), 02-01 (1min)
+- Trend: Accelerating with component reuse
 
 *Updated after each plan completion*
 
@@ -51,6 +52,9 @@ Recent decisions affecting current work:
 - B2B color palette — Monochrome grays + blue brand accent using oklch color space
 - Deployed to Vercel with automatic HTTPS — Production infrastructure operational
 - GitHub integration for CI/CD on push — Automatic deployments enabled
+- Navigation uses client component for mobile menu state — Interactive UI where needed
+- Container size prop (sm/md/lg/xl) for consistent max-widths — Design system established
+- Marketing layout uses route group for shared Navigation — Layout pattern set
 
 ### Pending Todos
 
@@ -62,9 +66,9 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-26T15:38:00Z
-Stopped at: Completed 01-02-PLAN.md (Vercel Deployment)
+Last session: 2026-01-26T17:30:38Z
+Stopped at: Completed 02-01-PLAN.md (Shared Components)
 Resume file: None
 
 ---
-*Last updated: 2026-01-26 after 01-02 plan completion*
+*Last updated: 2026-01-26 after 02-01 plan completion*
