@@ -29,11 +29,11 @@ export function Hero({
             {subheadline}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="primary" size="lg" href={primaryCTALink}>
+            <Button href={primaryCTALink} variant="primary" size="lg">
               {primaryCTA}
             </Button>
             {secondaryCTA && secondaryCTALink && (
-              <Button variant="secondary" size="lg" href={secondaryCTALink}>
+              <Button href={secondaryCTALink} variant="secondary" size="lg">
                 {secondaryCTA}
               </Button>
             )}
