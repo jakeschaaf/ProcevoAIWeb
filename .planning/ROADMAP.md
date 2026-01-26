@@ -106,11 +106,11 @@ Plans:
 3. Visitor can understand what happens after they contact Procevo (process transparency reduces friction)
 4. Trust signals are positioned throughout the site, not isolated on one page
 
-**Plans:** TBD
+**Plans:** 2 plans in 2 waves
 
 Plans:
-- [ ] 03-01: TBD during planning
-- [ ] 03-02: TBD during planning
+- [ ] 03-01-PLAN.md — Create CaseStudyCard component and invoice splitter data (Wave 1)
+- [ ] 03-02-PLAN.md — Integrate case studies across site and update navigation (Wave 2)
 
 ---
 
@@ -278,7 +278,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 2/2 | ✓ Complete | 2026-01-26 |
 | 2. Core Marketing Pages | 5/5 | ✓ Complete | 2026-01-26 |
-| 3. Trust & Credibility Layer | 0/0 | Not started | - |
+| 3. Trust & Credibility Layer | 0/2 | Planned | - |
 | 4. Lead Capture System | 0/0 | Not started | - |
 | 5. Content Refinement | 0/0 | Not started | - |
 | 6. SEO & Performance Optimization | 0/0 | Not started | - |
