@@ -13,14 +13,16 @@ interface ButtonProps {
 }
 
 const variantStyles = {
-  primary: 'bg-brand-500 hover:bg-brand-600 text-white',
-  secondary: 'bg-gray-200 hover:bg-gray-300 text-gray-900',
+  primary:
+    'bg-gray-900 hover:bg-gray-800 text-white shadow-sm hover:shadow-md',
+  secondary:
+    'bg-white hover:bg-gray-50 text-gray-900 border border-gray-300 hover:border-gray-400',
 };
 
 const sizeStyles = {
   sm: 'py-2 px-4 text-sm',
-  md: 'py-3 px-6',
-  lg: 'py-4 px-8 text-lg',
+  md: 'py-2.5 px-5 text-sm',
+  lg: 'py-3.5 px-7 text-base',
 };
 
 export function Button({
@@ -32,7 +34,7 @@ export function Button({
   onClick,
 }: ButtonProps) {
   const baseStyles =
-    'font-semibold rounded-lg transition-colors inline-block text-center';
+    'font-medium rounded-full transition-all duration-200 inline-flex items-center justify-center text-center tracking-wide';
   const variantClass = variantStyles[variant];
   const sizeClass = sizeStyles[size];
   const classes = `${baseStyles} ${variantClass} ${sizeClass} ${className}`;

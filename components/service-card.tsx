@@ -14,37 +14,53 @@ export function ServiceCard({
   idealFor,
 }: ServiceCardProps) {
   return (
-    <article className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8">
-      <h3 className="text-2xl font-bold text-gray-900 mb-2">{title}</h3>
-      <p className="text-brand-600 font-medium mb-4">{tagline}</p>
-      <p className="text-gray-700 mb-6 leading-relaxed">{description}</p>
-      
-      <div>
-        <h4 className="text-lg font-semibold text-gray-900 mb-3">What you get:</h4>
-        <ul className="space-y-2">
-          {outcomes.map((outcome, index) => (
-            <li key={index} className="flex items-start gap-2">
-              <svg
-                className="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span className="text-gray-700">{outcome}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <article className="group relative bg-white rounded-2xl p-8 md:p-10 border border-gray-200 hover:border-brand-200 transition-all duration-300 hover:shadow-xl hover:shadow-brand-500/5">
+      {/* Decorative gradient on hover */}
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-50/0 to-brand-100/0 group-hover:from-brand-50/50 group-hover:to-brand-100/30 transition-all duration-300" />
 
-      <div className="mt-6 pt-6 border-t border-gray-200">
-        <p className="text-sm text-gray-600 italic">{idealFor}</p>
+      <div className="relative">
+        <p className="text-sm font-medium text-brand-500 tracking-wide mb-3">
+          {tagline}
+        </p>
+        <h3 className="font-display text-2xl md:text-3xl text-gray-900 mb-4 tracking-tight">
+          {title}
+        </h3>
+        <p className="text-gray-600 leading-relaxed mb-8">{description}</p>
+
+        <div className="space-y-4">
+          <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
+            What you get
+          </h4>
+          <ul className="space-y-3">
+            {outcomes.map((outcome, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-brand-100 flex items-center justify-center mt-0.5">
+                  <svg
+                    className="w-3 h-3 text-brand-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={3}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </span>
+                <span className="text-gray-700 text-[15px]">{outcome}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-gray-100">
+          <p className="text-sm text-gray-500 leading-relaxed">
+            <span className="font-medium text-gray-700">Best for: </span>
+            {idealFor.replace('Ideal for ', '')}
+          </p>
+        </div>
       </div>
     </article>
   );

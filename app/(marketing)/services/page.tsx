@@ -25,9 +25,17 @@ export default function ServicesPage() {
         primaryCTALink="/contact"
       />
 
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-20 md:py-28 bg-white">
         <Container size="lg">
-          <div className="grid gap-8 lg:gap-12 lg:grid-cols-2">
+          <div className="text-center mb-16">
+            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
+              Our Services
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+              Choose Your Path Forward
+            </h2>
+          </div>
+          <div className="grid gap-8 lg:gap-10 lg:grid-cols-2">
             <ServiceCard
               title="Custom Automation & AI Projects"
               tagline="From concept to deployment"
@@ -57,45 +65,62 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      <section className="py-16 md:py-24 bg-gray-50">
-        <Container size="md">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
-            Simple Process, Real Results
-          </h2>
-          <p className="text-lg text-gray-700 text-center mb-12 max-w-2xl mx-auto">
-            We keep it straightforward. No endless meetings or confusing
-            proposals.
-          </p>
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-brand-500 mb-4">1</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Discovery Call
-              </h3>
-              <p className="text-gray-700">
-                We learn about your challenges and see if we&apos;re a good fit. No
-                pressure, no sales pitch.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-brand-500 mb-4">2</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Solution Design
-              </h3>
-              <p className="text-gray-700">
-                We map out exactly what we&apos;ll build and how it solves your
-                problem. Clear scope, clear timeline.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-brand-500 mb-4">3</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Build & Deploy
-              </h3>
-              <p className="text-gray-700">
-                We build it, test it with your team, and make sure it works
-                before we call it done.
-              </p>
+      <section className="py-20 md:py-28 bg-gray-50">
+        <Container size="lg">
+          <div className="text-center mb-16">
+            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
+              Our Process
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight mb-4">
+              Simple Process, Real Results
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We keep it straightforward. No endless meetings or confusing
+              proposals.
+            </p>
+          </div>
+
+          <div className="relative">
+            {/* Connecting line */}
+            <div className="hidden md:block absolute top-16 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+
+            <div className="grid gap-8 md:gap-6 md:grid-cols-3">
+              <div className="relative text-center">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-brand-500 text-brand-500 font-display text-2xl mb-6 shadow-sm">
+                  1
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Discovery Call
+                </h3>
+                <p className="text-gray-600 text-[15px] leading-relaxed">
+                  We learn about your challenges and see if we&apos;re a good fit. No
+                  pressure, no sales pitch.
+                </p>
+              </div>
+              <div className="relative text-center">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-brand-500 text-brand-500 font-display text-2xl mb-6 shadow-sm">
+                  2
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Solution Design
+                </h3>
+                <p className="text-gray-600 text-[15px] leading-relaxed">
+                  We map out exactly what we&apos;ll build and how it solves your
+                  problem. Clear scope, clear timeline.
+                </p>
+              </div>
+              <div className="relative text-center">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-brand-500 text-brand-500 font-display text-2xl mb-6 shadow-sm">
+                  3
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Build & Deploy
+                </h3>
+                <p className="text-gray-600 text-[15px] leading-relaxed">
+                  We build it, test it with your team, and make sure it works
+                  before we call it done.
+                </p>
+              </div>
             </div>
           </div>
         </Container>
