@@ -78,12 +78,14 @@ Plans:
 4. About page establishes founder credibility through 20+ years experience and personal story
 5. All pages render correctly on mobile devices (320px to 1920px widths)
 
-**Plans:** TBD
+**Plans:** 5 plans in 3 waves
 
 Plans:
-- [ ] 02-01: TBD during planning
-- [ ] 02-02: TBD during planning
-- [ ] 02-03: TBD during planning
+- [ ] 02-01-PLAN.md — Shared components and navigation (Wave 1)
+- [ ] 02-02-PLAN.md — Homepage with hero, pain points, and CTA (Wave 2)
+- [ ] 02-03-PLAN.md — Services page with two offerings (Wave 2)
+- [ ] 02-04-PLAN.md — About page with founder bio and company story (Wave 2)
+- [ ] 02-05-PLAN.md — Mobile responsiveness verification checkpoint (Wave 3)
 
 ---
 
@@ -275,7 +277,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 2/2 | ✓ Complete | 2026-01-26 |
-| 2. Core Marketing Pages | 0/0 | Not started | - |
+| 2. Core Marketing Pages | 0/5 | Planned | - |
 | 3. Trust & Credibility Layer | 0/0 | Not started | - |
 | 4. Lead Capture System | 0/0 | Not started | - |
 | 5. Content Refinement | 0/0 | Not started | - |
@@ -284,4 +286,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 8. Final Polish & Launch | 0/0 | Not started | - |
 
 ---
-*Last updated: 2026-01-26 after Phase 1 completion*
+*Last updated: 2026-01-26 after Phase 2 planning*
