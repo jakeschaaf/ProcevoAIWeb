@@ -6,7 +6,7 @@ See: .planning/PROJECT.md (updated 2026-01-26)
 
 **Core value:** Visitors immediately understand the pain Procevo solves (stretched teams drowning in repetitive work and disconnected systems) and can reach out within seconds — because speed of response wins deals.
 
-**Current focus:** Phase 2 - Core Marketing Pages (ready to plan)
+**Current focus:** Phase 3 - Trust & Credibility Layer (ready to plan)
 
 ## Current Position
 
