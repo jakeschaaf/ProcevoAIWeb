@@ -46,11 +46,11 @@ Decimal phases appear between their surrounding integers in numeric order.
 4. HTTPS is enabled on deployed site
 5. Vercel Analytics tracks page views on deployed site
 
-**Plans:** TBD
+**Plans:** 2 plans in 2 waves
 
 Plans:
-- [ ] 01-01: TBD during planning
-- [ ] 01-02: TBD during planning
+- [ ] 01-01-PLAN.md — Create Next.js 16 project with Tailwind v4 and Vercel Analytics
+- [ ] 01-02-PLAN.md — Deploy to Vercel and verify deployment pipeline
 
 ---
 
@@ -274,7 +274,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Infrastructure | 0/0 | Not started | - |
+| 1. Foundation & Infrastructure | 0/2 | Planned | - |
 | 2. Core Marketing Pages | 0/0 | Not started | - |
 | 3. Trust & Credibility Layer | 0/0 | Not started | - |
 | 4. Lead Capture System | 0/0 | Not started | - |
@@ -284,4 +284,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 8. Final Polish & Launch | 0/0 | Not started | - |
 
 ---
-*Last updated: 2026-01-26 after roadmap creation*
+*Last updated: 2026-01-26 after Phase 1 planning*
