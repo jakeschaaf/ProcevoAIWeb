@@ -6,23 +6,23 @@ See: .planning/PROJECT.md (updated 2026-01-26)
 
 **Core value:** Visitors immediately understand the pain Procevo solves (stretched teams drowning in repetitive work and disconnected systems) and can reach out within seconds — because speed of response wins deals.
 
-**Current focus:** Phase 4 - Lead Capture System (ready to plan)
+**Current focus:** Phase 4 - Lead Capture System (in progress)
 
 ## Current Position
 
-Phase: 3 of 8 (Trust & Credibility Layer)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-01-26 — Completed Phase 3 (Trust & Credibility Layer)
+Phase: 4 of 8 (Lead Capture System)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-01-27 — Completed 04-01-PLAN.md
 
-Progress: [████████░░] 37.5% (3 of 8 phases)
+Progress: [████████░░] 37.5% (3 of 8 phases, plan 1/2 of phase 4)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: 3.3 min
-- Total execution time: 0.5 hours
+- Total execution time: 0.55 hours
 
 **By Phase:**
 
@@ -31,10 +31,11 @@ Progress: [████████░░] 37.5% (3 of 8 phases)
 | 01-foundation-infrastructure | 2 | 13min | 6.5min |
 | 02-core-marketing-pages | 5 | 13min | 2.6min |
 | 03-trust-credibility-layer | 2 | 4min | 2min |
+| 04-lead-capture-system | 1 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 02-04 (1min), 02-05 (7min), 03-01 (2min), 03-02 (2min)
-- Trend: Fast execution continues, integration patterns well-established
+- Last 5 plans: 02-05 (7min), 03-01 (2min), 03-02 (2min), 04-01 (3min)
+- Trend: Consistent fast execution
 
 *Updated after each plan completion*
 
@@ -48,7 +49,9 @@ Recent decisions affecting current work:
 - Static marketing site (no CMS) — Content lives on social media, site is destination only
 - Vercel hosting — User preference, already has projects there
 - Email + Telegram for contact notifications — Speed of response is competitive advantage
-- Static export configuration — No server runtime needed for marketing site
+- Removed static export — API routes require server runtime on Vercel
+- Resend v4 for email — v6.9 has broken TypeScript definitions
+- Lazy service client initialization — Avoid build-time env var requirements
 - Tailwind CSS v4 — Using native CSS custom properties via @theme directive
 - B2B color palette — Monochrome grays + blue brand accent using oklch color space
 - Deployed to Vercel with automatic HTTPS — Production infrastructure operational
@@ -85,8 +88,8 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-26T17:30:00Z
-Stopped at: Completed Phase 3 (Trust & Credibility Layer)
+Last session: 2026-01-27T15:01:33Z
+Stopped at: Completed 04-01-PLAN.md
 Resume file: None
 
 ## Phase Status
@@ -96,7 +99,11 @@ Resume file: None
 - Plan 03-02 complete: Case study integration on homepage, services, dedicated page, navigation
 - Trust signals distributed across homepage, services, and dedicated /case-studies page
 - All requirements verified (TRUST-01, TRUST-02, TRUST-03)
-- Ready to proceed to Phase 4 (Lead Capture System)
+
+**Phase 4 (Lead Capture System): IN PROGRESS**
+- Plan 04-01 complete: Contact form backend API with email and Telegram notifications
+- Plan 04-02 pending: Contact form UI
+- Env vars needed: RESEND_API_KEY, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 
 ---
-*Last updated: 2026-01-26 after Phase 3 completion*
+*Last updated: 2026-01-27 after 04-01 completion*
