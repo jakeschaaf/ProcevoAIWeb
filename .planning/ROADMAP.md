@@ -133,11 +133,11 @@ Plans:
 4. Form includes client and server-side validation to prevent bad submissions
 5. Contact page offers multiple contact methods, not just the form
 
-**Plans:** TBD
+**Plans:** 2 plans in 2 waves
 
 Plans:
-- [ ] 04-01: TBD during planning
-- [ ] 04-02: TBD during planning
+- [ ] 04-01-PLAN.md — Backend infrastructure: remove static export, API route with email/Telegram (Wave 1)
+- [ ] 04-02-PLAN.md — Frontend: ContactForm component and updated contact page (Wave 2)
 
 ---
 
@@ -272,18 +272,18 @@ Note: PAGE-08 (mobile-responsive) appears in both Phase 1 (foundation setup for 
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 2/2 | ✓ Complete | 2026-01-26 |
 | 2. Core Marketing Pages | 5/5 | ✓ Complete | 2026-01-26 |
 | 3. Trust & Credibility Layer | 2/2 | ✓ Complete | 2026-01-26 |
-| 4. Lead Capture System | 0/0 | Not started | - |
+| 4. Lead Capture System | 0/2 | Planned | - |
 | 5. Content Refinement | 0/0 | Not started | - |
 | 6. SEO & Performance Optimization | 0/0 | Not started | - |
 | 7. Multi-CTA Integration | 0/0 | Not started | - |
 | 8. Final Polish & Launch | 0/0 | Not started | - |
 
 ---
-*Last updated: 2026-01-26 after Phase 3 completion*
+*Last updated: 2026-01-26 after Phase 4 planning*
