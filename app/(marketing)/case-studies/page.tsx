@@ -26,8 +26,11 @@ export default function CaseStudiesPage() {
         primaryCTALink="/contact"
       />
 
-      <section className="py-20 md:py-28 bg-white">
-        <Container size="lg">
+      <section className="relative py-24 md:py-32 bg-slate-900 overflow-hidden">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="grain absolute inset-0 pointer-events-none" />
+
+        <Container size="lg" className="relative">
           <div className="grid gap-8 lg:gap-10">
             {allCaseStudies.map((caseStudy, index) => (
               <div key={index} className="max-w-3xl mx-auto w-full">
@@ -38,7 +41,7 @@ export default function CaseStudiesPage() {
 
           {allCaseStudies.length === 1 && (
             <div className="mt-16 text-center">
-              <p className="text-gray-500 text-lg">
+              <p className="text-slate-500 text-lg">
                 More case studies coming soon as we grow.
               </p>
             </div>

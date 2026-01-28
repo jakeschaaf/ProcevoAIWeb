@@ -51,9 +51,9 @@ export function ContactForm() {
   if (submitState === 'success') {
     return (
       <div className="text-center py-8">
-        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-accent-500/10 border border-accent-500/30 flex items-center justify-center">
           <svg
-            className="w-8 h-8 text-green-600"
+            className="w-8 h-8 text-accent-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -66,15 +66,15 @@ export function ContactForm() {
             />
           </svg>
         </div>
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">
-          Message Sent!
+        <h3 className="text-xl font-semibold text-slate-100 mb-2">
+          Message Sent
         </h3>
-        <p className="text-gray-600">
+        <p className="text-slate-400">
           Thanks for reaching out. I&apos;ll get back to you soon.
         </p>
         <button
           onClick={() => setSubmitState('idle')}
-          className="mt-4 text-brand-600 hover:text-brand-700 font-medium"
+          className="mt-4 text-accent-500 hover:text-accent-400 font-medium transition-colors"
         >
           Send another message
         </button>
@@ -96,28 +96,28 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 mb-1.5"
+          className="block text-sm font-medium text-slate-300 mb-1.5"
         >
-          Email <span className="text-red-500">*</span>
+          Email <span className="text-accent-500">*</span>
         </label>
         <input
           type="email"
           id="email"
           {...register('email')}
-          className={`w-full px-4 py-3 rounded-lg border ${
-            errors.email ? 'border-red-500' : 'border-gray-300'
-          } focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors`}
+          className={`w-full px-4 py-3 rounded-lg bg-slate-800/50 border ${
+            errors.email ? 'border-red-500' : 'border-slate-700'
+          } text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-accent-500/50 focus:border-accent-500 transition-all duration-300`}
           placeholder="you@company.com"
         />
         {errors.email && (
-          <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+          <p className="mt-1 text-sm text-red-400">{errors.email.message}</p>
         )}
       </div>
 
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium text-gray-700 mb-1.5"
+          className="block text-sm font-medium text-slate-300 mb-1.5"
         >
           Name
         </label>
@@ -125,7 +125,7 @@ export function ContactForm() {
           type="text"
           id="name"
           {...register('name')}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-slate-800/50 border border-slate-700 text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-accent-500/50 focus:border-accent-500 transition-all duration-300"
           placeholder="Your name"
         />
       </div>
@@ -133,7 +133,7 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="company"
-          className="block text-sm font-medium text-gray-700 mb-1.5"
+          className="block text-sm font-medium text-slate-300 mb-1.5"
         >
           Company
         </label>
@@ -141,7 +141,7 @@ export function ContactForm() {
           type="text"
           id="company"
           {...register('company')}
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-slate-800/50 border border-slate-700 text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-accent-500/50 focus:border-accent-500 transition-all duration-300"
           placeholder="Your company"
         />
       </div>
@@ -149,34 +149,34 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-gray-700 mb-1.5"
+          className="block text-sm font-medium text-slate-300 mb-1.5"
         >
-          How can we help? <span className="text-red-500">*</span>
+          How can we help? <span className="text-accent-500">*</span>
         </label>
         <textarea
           id="message"
           {...register('message')}
           rows={4}
-          className={`w-full px-4 py-3 rounded-lg border ${
-            errors.message ? 'border-red-500' : 'border-gray-300'
-          } focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors resize-none`}
+          className={`w-full px-4 py-3 rounded-lg bg-slate-800/50 border ${
+            errors.message ? 'border-red-500' : 'border-slate-700'
+          } text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-accent-500/50 focus:border-accent-500 transition-all duration-300 resize-none`}
           placeholder="Tell us briefly about your situation..."
         />
         {errors.message && (
-          <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
+          <p className="mt-1 text-sm text-red-400">{errors.message.message}</p>
         )}
       </div>
 
       {submitState === 'error' && (
-        <div className="p-4 rounded-lg bg-red-50 border border-red-200">
-          <p className="text-sm text-red-700">{errorMessage}</p>
+        <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/30">
+          <p className="text-sm text-red-400">{errorMessage}</p>
         </div>
       )}
 
       <button
         type="submit"
         disabled={submitState === 'submitting'}
-        className="w-full py-4 px-6 bg-gray-900 hover:bg-gray-800 disabled:bg-gray-400 text-white font-medium rounded-full transition-all duration-200 shadow-sm hover:shadow-md disabled:cursor-not-allowed"
+        className="w-full py-4 px-6 bg-accent-500 hover:bg-accent-400 disabled:bg-slate-700 text-slate-950 disabled:text-slate-400 font-medium rounded-full transition-all duration-300 shadow-lg shadow-accent-500/20 hover:shadow-accent-400/30 disabled:shadow-none disabled:cursor-not-allowed"
       >
         {submitState === 'submitting' ? 'Sending...' : 'Send Message'}
       </button>

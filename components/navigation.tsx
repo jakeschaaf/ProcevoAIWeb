@@ -28,9 +28,9 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200/50'
+          ? 'bg-slate-950/95 backdrop-blur-md border-b border-slate-800/50'
           : 'bg-transparent'
       }`}
     >
@@ -39,9 +39,12 @@ export function Navigation() {
           {/* Logo */}
           <Link
             href="/"
-            className="font-display text-xl md:text-2xl text-gray-900 tracking-tight hover:text-brand-600 transition-colors"
+            className="group flex items-center gap-2"
           >
-            Procevo<span className="text-brand-500">.</span>
+            <span className="font-display text-xl md:text-2xl text-slate-100 tracking-tight italic">
+              Procevo
+            </span>
+            <span className="text-accent-500 text-2xl font-light">.</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,27 +53,27 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative text-sm font-medium tracking-wide transition-colors ${
+                className={`relative text-sm font-medium tracking-wide transition-colors duration-300 ${
                   pathname === item.href
-                    ? 'text-gray-900'
-                    : 'text-gray-500 hover:text-gray-900'
+                    ? 'text-slate-100'
+                    : 'text-slate-400 hover:text-slate-100'
                 }`}
               >
                 {item.label}
                 {pathname === item.href && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand-500 rounded-full" />
+                  <span className="absolute -bottom-1 left-0 right-0 h-px bg-gradient-to-r from-accent-500 to-accent-400" />
                 )}
               </Link>
             ))}
             <Button href="/contact" variant="primary" size="md">
-              Get Started
+              Start a Conversation
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-gray-700 min-w-[44px] min-h-[44px] rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 text-slate-300 min-w-[44px] min-h-[44px] rounded-lg hover:bg-slate-800/50 transition-colors"
             aria-label="Toggle menu"
           >
             <svg
@@ -95,10 +98,10 @@ export function Navigation() {
       {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${
-          isMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-white border-t border-gray-100 py-4 shadow-lg">
+        <div className="bg-slate-900 border-t border-slate-800 py-4">
           <Container>
             <div className="flex flex-col gap-1">
               {navItems.map((item) => (
@@ -108,21 +111,21 @@ export function Navigation() {
                   onClick={() => setIsMenuOpen(false)}
                   className={`px-4 py-3 rounded-lg min-h-[44px] flex items-center text-sm font-medium transition-colors ${
                     pathname === item.href
-                      ? 'text-brand-600 bg-brand-50'
-                      : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                      ? 'text-accent-500 bg-slate-800/50'
+                      : 'text-slate-300 hover:bg-slate-800/30 hover:text-slate-100'
                   }`}
                 >
                   {item.label}
                 </Link>
               ))}
-              <div className="mt-3 pt-3 border-t border-gray-100">
+              <div className="mt-3 pt-3 border-t border-slate-800">
                 <Button
                   href="/contact"
                   variant="primary"
                   className="w-full"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Get Started
+                  Start a Conversation
                 </Button>
               </div>
             </div>

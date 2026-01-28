@@ -1,27 +1,40 @@
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
 
-interface CTAProps {
+type CTAProps = {
   heading: string;
   subheading?: string;
   ctaText: string;
   ctaLink: string;
-}
+};
 
 export function CTA({ heading, subheading, ctaText, ctaLink }: CTAProps) {
   return (
-    <section className="relative py-24 md:py-32 bg-gray-900 overflow-hidden">
-      {/* Gradient orbs */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-600/10 rounded-full blur-3xl" />
+    <section className="relative py-24 md:py-32 bg-slate-950 overflow-hidden">
+      {/* Warm gradient orbs */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent-500/10 rounded-full blur-[150px]" />
+      <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-accent-600/5 rounded-full blur-[120px]" />
+
+      {/* Grid pattern */}
+      <div className="absolute inset-0 grid-pattern opacity-20" />
+
+      {/* Grain */}
+      <div className="grain absolute inset-0 pointer-events-none" />
 
       <Container size="md">
         <div className="relative text-center">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-white mb-6 tracking-tight">
+          {/* Decorative lines */}
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-accent-500/50" />
+            <div className="w-2 h-2 bg-accent-500 rounded-full" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-accent-500/50" />
+          </div>
+
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 mb-6 tracking-tight italic">
             {heading}
           </h2>
           {subheading && (
-            <p className="text-lg text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
+            <p className="text-lg text-slate-400 mb-10 max-w-xl mx-auto leading-relaxed">
               {subheading}
             </p>
           )}
@@ -29,7 +42,6 @@ export function CTA({ heading, subheading, ctaText, ctaLink }: CTAProps) {
             href={ctaLink}
             variant="primary"
             size="lg"
-            className="!bg-white !text-gray-900 hover:!bg-gray-100"
           >
             {ctaText}
             <svg

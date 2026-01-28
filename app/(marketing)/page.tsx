@@ -7,7 +7,7 @@ import { Container } from '@/components/ui/container';
 import { invoiceSplitterCaseStudy } from '@/data/case-studies';
 
 export const metadata: Metadata = {
-  title: 'Custom Automation for Mid-Market Companies',
+  title: 'Custom Automation for Mid-Market Companies | Procevo AI',
   description:
     'Stop losing time to manual processes. Procevo AI helps stretched teams automate repetitive tasks and integrate disconnected systems.',
   openGraph: {
@@ -49,25 +49,33 @@ export default function Home() {
         ]}
       />
 
-      <section className="py-20 md:py-28 bg-gray-50">
+      <section className="relative py-24 md:py-32 bg-slate-950 overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="grain absolute inset-0 pointer-events-none" />
+
         <Container size="lg">
           <div className="text-center mb-12">
-            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
-              Proof It Works
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-8 bg-accent-500/50" />
+              <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+                Proof It Works
+              </span>
+              <div className="h-px w-8 bg-accent-500/50" />
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 tracking-tight italic">
               Real Results
             </h2>
           </div>
 
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto relative">
             <CaseStudyCard {...invoiceSplitterCaseStudy} />
           </div>
 
           <div className="text-center mt-10">
             <a
               href="/case-studies"
-              className="inline-flex items-center gap-2 text-brand-500 hover:text-brand-600 font-medium transition-colors"
+              className="inline-flex items-center gap-2 text-accent-500 hover:text-accent-400 font-medium transition-colors duration-300"
             >
               View All Case Studies
               <svg

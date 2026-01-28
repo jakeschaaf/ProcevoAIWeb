@@ -27,13 +27,20 @@ export default function ServicesPage() {
         primaryCTALink="/contact"
       />
 
-      <section className="py-20 md:py-28 bg-white">
-        <Container size="lg">
+      <section className="relative py-24 md:py-32 bg-slate-900 overflow-hidden">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="grain absolute inset-0 pointer-events-none" />
+
+        <Container size="lg" className="relative">
           <div className="text-center mb-16">
-            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
-              Our Services
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-8 bg-accent-500/50" />
+              <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+                Our Services
+              </span>
+              <div className="h-px w-8 bg-accent-500/50" />
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 tracking-tight italic">
               Choose Your Path Forward
             </h2>
           </div>
@@ -67,16 +74,23 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-gray-50">
-        <Container size="lg">
+      <section className="relative py-24 md:py-32 bg-slate-950 overflow-hidden">
+        <div className="absolute inset-0 lines-pattern opacity-10" />
+        <div className="grain absolute inset-0 pointer-events-none" />
+
+        <Container size="lg" className="relative">
           <div className="text-center mb-16">
-            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
-              Our Process
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight mb-4">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-8 bg-accent-500/50" />
+              <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+                Our Process
+              </span>
+              <div className="h-px w-8 bg-accent-500/50" />
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 tracking-tight mb-4 italic">
               Simple Process, Real Results
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
               We keep it straightforward. No endless meetings or confusing
               proposals.
             </p>
@@ -84,41 +98,41 @@ export default function ServicesPage() {
 
           <div className="relative">
             {/* Connecting line */}
-            <div className="hidden md:block absolute top-16 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+            <div className="hidden md:block absolute top-16 left-1/6 right-1/6 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
 
             <div className="grid gap-8 md:gap-6 md:grid-cols-3">
               <div className="relative text-center">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-brand-500 text-brand-500 font-display text-2xl mb-6 shadow-sm">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-slate-800 border-2 border-accent-500 text-accent-500 font-display text-2xl mb-6 italic">
                   1
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-slate-100 mb-3">
                   Discovery Call
                 </h3>
-                <p className="text-gray-600 text-[15px] leading-relaxed">
+                <p className="text-slate-400 text-[15px] leading-relaxed">
                   We learn about your challenges and see if we&apos;re a good fit. No
                   pressure, no sales pitch.
                 </p>
               </div>
               <div className="relative text-center">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-brand-500 text-brand-500 font-display text-2xl mb-6 shadow-sm">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-slate-800 border-2 border-accent-500 text-accent-500 font-display text-2xl mb-6 italic">
                   2
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-slate-100 mb-3">
                   Solution Design
                 </h3>
-                <p className="text-gray-600 text-[15px] leading-relaxed">
+                <p className="text-slate-400 text-[15px] leading-relaxed">
                   We map out exactly what we&apos;ll build and how it solves your
                   problem. Clear scope, clear timeline.
                 </p>
               </div>
               <div className="relative text-center">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-brand-500 text-brand-500 font-display text-2xl mb-6 shadow-sm">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-slate-800 border-2 border-accent-500 text-accent-500 font-display text-2xl mb-6 italic">
                   3
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-slate-100 mb-3">
                   Build & Deploy
                 </h3>
-                <p className="text-gray-600 text-[15px] leading-relaxed">
+                <p className="text-slate-400 text-[15px] leading-relaxed">
                   We build it, test it with your team, and make sure it works
                   before we call it done.
                 </p>
@@ -128,16 +142,23 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28 bg-white">
-        <Container size="lg">
+      <section className="relative py-24 md:py-32 bg-slate-900 overflow-hidden">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="grain absolute inset-0 pointer-events-none" />
+
+        <Container size="lg" className="relative">
           <div className="text-center mb-12">
-            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
-              See It In Action
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight mb-4">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-8 bg-accent-500/50" />
+              <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+                See It In Action
+              </span>
+              <div className="h-px w-8 bg-accent-500/50" />
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 tracking-tight mb-4 italic">
               Real Projects, Real Results
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
               Here&apos;s what we&apos;ve built for companies just like yours.
             </p>
           </div>

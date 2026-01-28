@@ -3,7 +3,7 @@ import { Container } from '@/components/ui/container';
 import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Contact | Procevo AI',
   description:
     'Get in touch with Procevo AI. Schedule a free consultation to discuss how we can help automate your processes.',
   openGraph: {
@@ -15,16 +15,26 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="py-20 md:py-28">
-      <Container size="lg">
+    <section className="relative min-h-screen pt-32 pb-20 md:pb-28 overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0 bg-slate-950" />
+      <div className="absolute inset-0 grid-pattern opacity-20" />
+      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-accent-500/5 rounded-full blur-[150px]" />
+      <div className="grain absolute inset-0 pointer-events-none" />
+
+      <Container size="lg" className="relative">
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
-            Get in Touch
-          </p>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-gray-900 tracking-tight mb-6">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="h-px w-8 bg-accent-500/50" />
+            <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+              Get in Touch
+            </span>
+            <div className="h-px w-8 bg-accent-500/50" />
+          </div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-slate-100 tracking-tight mb-6 italic">
             Let&apos;s Talk
           </h1>
-          <p className="text-lg text-gray-600 max-w-xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-400 max-w-xl mx-auto leading-relaxed">
             Ready to eliminate manual work and streamline your operations? Reach
             out and let&apos;s discuss how we can help.
           </p>
@@ -32,8 +42,8 @@ export default function ContactPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 max-w-5xl mx-auto">
           <div className="lg:col-span-3">
-            <div className="bg-white rounded-2xl border border-gray-200 p-8 md:p-10 shadow-sm">
-              <h2 className="text-xl font-semibold text-gray-900 mb-6">
+            <div className="bg-slate-900/50 rounded-2xl border border-slate-800 p-8 md:p-10 backdrop-blur-sm">
+              <h2 className="text-xl font-semibold text-slate-100 mb-6">
                 Send a Message
               </h2>
               <ContactForm />
@@ -41,11 +51,11 @@ export default function ContactPage() {
           </div>
 
           <div className="lg:col-span-2 space-y-6">
-            <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
+            <div className="bg-slate-900/50 rounded-2xl border border-slate-800 p-8 backdrop-blur-sm">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-accent-500/10 border border-accent-500/20 flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-5 h-5 text-brand-600"
+                    className="w-5 h-5 text-accent-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -58,24 +68,24 @@ export default function ContactPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900">Email</h3>
+                <h3 className="font-semibold text-slate-100">Email</h3>
               </div>
               <a
                 href="mailto:jake@procevo.ai"
-                className="text-brand-600 hover:text-brand-700 font-medium transition-colors"
+                className="text-accent-500 hover:text-accent-400 font-medium transition-colors"
               >
                 jake@procevo.ai
               </a>
-              <p className="text-sm text-gray-500 mt-2">
+              <p className="text-sm text-slate-500 mt-2">
                 I typically respond within 24 hours.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
+            <div className="bg-slate-900/50 rounded-2xl border border-slate-800 p-8 backdrop-blur-sm">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-accent-500/10 border border-accent-500/20 flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-5 h-5 text-brand-600"
+                    className="w-5 h-5 text-accent-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -88,26 +98,26 @@ export default function ContactPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900">LinkedIn</h3>
+                <h3 className="font-semibold text-slate-100">LinkedIn</h3>
               </div>
               <a
                 href="https://www.linkedin.com/company/procevo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-600 hover:text-brand-700 font-medium transition-colors"
+                className="text-accent-500 hover:text-accent-400 font-medium transition-colors"
               >
                 Connect on LinkedIn
               </a>
-              <p className="text-sm text-gray-500 mt-2">
+              <p className="text-sm text-slate-500 mt-2">
                 Follow for updates and insights.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl border border-gray-200 p-8">
+            <div className="bg-slate-800/30 rounded-2xl border border-slate-700/50 p-8">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-accent-500/10 border border-accent-500/20 flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-5 h-5 text-green-600"
+                    className="w-5 h-5 text-accent-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -120,9 +130,9 @@ export default function ContactPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900">Quick Response</h3>
+                <h3 className="font-semibold text-slate-100">Quick Response</h3>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed">
                 Most inquiries receive a response within a few hours during
                 business days. For urgent matters, email directly.
               </p>

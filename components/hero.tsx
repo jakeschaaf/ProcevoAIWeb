@@ -1,14 +1,14 @@
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
 
-interface HeroProps {
+type HeroProps = {
   headline: string;
   subheadline: string;
   primaryCTA: string;
   primaryCTALink: string;
   secondaryCTA?: string;
   secondaryCTALink?: string;
-}
+};
 
 export function Hero({
   headline,
@@ -19,33 +19,54 @@ export function Hero({
   secondaryCTALink,
 }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50/50 to-gray-100 py-20 md:py-28 lg:py-36">
-      {/* Subtle grid pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.015]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}
-      />
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-950">
+      {/* Sophisticated grid pattern */}
+      <div className="absolute inset-0 grid-pattern opacity-30" />
 
-      <Container size="lg">
-        <div className="relative max-w-4xl mx-auto text-center">
-          {/* Decorative accent line */}
-          <div className="flex justify-center mb-8">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent via-brand-500 to-transparent" />
+      {/* Diagonal lines accent */}
+      <div className="absolute top-0 right-0 w-1/2 h-full lines-pattern opacity-20" />
+
+      {/* Warm glow from accent color */}
+      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-accent-500/5 rounded-full blur-[150px]" />
+      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent-600/8 rounded-full blur-[120px]" />
+
+      {/* Grain texture overlay */}
+      <div className="grain absolute inset-0 pointer-events-none" />
+
+      <Container size="lg" className="relative z-10">
+        <div className="max-w-4xl pt-20">
+          {/* Editorial accent */}
+          <div className="flex items-center gap-4 mb-8">
+            <div className="h-px w-12 bg-accent-500" />
+            <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+              Intelligent Automation
+            </span>
           </div>
 
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[1.1] tracking-tight">
-            {headline}
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-slate-100 leading-[1.1] tracking-tight">
+            <span className="italic">{headline}</span>
           </h1>
 
-          <p className="mt-6 md:mt-8 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="mt-8 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
             {subheadline}
           </p>
 
-          <div className="mt-10 md:mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="mt-12 flex flex-col sm:flex-row gap-4 items-start">
             <Button href={primaryCTALink} variant="primary" size="lg">
               {primaryCTA}
+              <svg
+                className="ml-2 w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
             </Button>
             {secondaryCTA && secondaryCTALink && (
               <Button href={secondaryCTALink} variant="secondary" size="lg">
@@ -53,11 +74,23 @@ export function Hero({
               </Button>
             )}
           </div>
+
+          {/* Trust indicators */}
+          <div className="mt-16 pt-8 border-t border-slate-800">
+            <p className="text-sm text-slate-500 mb-4">Trusted by operations teams at</p>
+            <div className="flex flex-wrap gap-8 items-center text-slate-600">
+              <span className="text-sm font-medium tracking-wide">Mid-Market Companies</span>
+              <span className="hidden sm:block w-px h-4 bg-slate-800" />
+              <span className="text-sm font-medium tracking-wide">20+ Years Experience</span>
+              <span className="hidden sm:block w-px h-4 bg-slate-800" />
+              <span className="text-sm font-medium tracking-wide">Custom Solutions</span>
+            </div>
+          </div>
         </div>
       </Container>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      {/* Decorative vertical line */}
+      <div className="absolute bottom-0 left-1/2 w-px h-24 bg-gradient-to-t from-transparent via-slate-700 to-transparent" />
     </section>
   );
 }

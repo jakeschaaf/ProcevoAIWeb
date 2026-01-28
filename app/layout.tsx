@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Instrument_Serif, DM_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-plus-jakarta",
   display: "swap",
 });
 
-const instrumentSerif = Instrument_Serif({
-  weight: "400",
+const newsreader = Newsreader({
   subsets: ["latin"],
-  variable: "--font-instrument",
+  variable: "--font-newsreader",
+  style: ["normal", "italic"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Procevo AI",
-  description: "AI-powered automation for mid-market companies",
+  title: "Procevo AI | Intelligent Automation for Mid-Market Companies",
+  description: "We build custom AI and automation systems that eliminate repetitive work, connect disconnected systems, and free your team to focus on growth.",
 };
 
 export default function RootLayout({
@@ -27,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${instrumentSerif.variable}`}>
-      <body className="font-sans antialiased bg-gray-50 text-gray-900">
+    <html lang="en" className={`${plusJakarta.variable} ${newsreader.variable}`}>
+      <body className="font-sans antialiased bg-slate-950 text-slate-100">
         {children}
         <Analytics />
       </body>

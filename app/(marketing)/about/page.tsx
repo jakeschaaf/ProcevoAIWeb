@@ -25,21 +25,24 @@ export default function AboutPage() {
       />
 
       {/* Founder Section */}
-      <section className="bg-white py-20 md:py-28">
-        <Container size="lg">
+      <section className="relative bg-slate-900 py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="grain absolute inset-0 pointer-events-none" />
+
+        <Container size="lg" className="relative">
           <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-2">
             {/* Photo placeholder */}
             <div className="mx-auto max-w-md lg:mx-0">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-brand-100 to-brand-50 rounded-3xl transform -rotate-3" />
-                <div className="relative flex aspect-square items-center justify-center rounded-2xl bg-gray-100 border border-gray-200 overflow-hidden">
+                <div className="absolute -inset-4 bg-gradient-to-br from-accent-500/10 to-slate-800 rounded-3xl transform -rotate-3" />
+                <div className="relative flex aspect-square items-center justify-center rounded-2xl bg-slate-800/50 border border-slate-700 overflow-hidden">
                   <div className="text-center p-8">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-700 flex items-center justify-center">
+                      <svg className="w-8 h-8 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                       </svg>
                     </div>
-                    <span className="text-sm text-gray-500">Photo coming soon</span>
+                    <span className="text-sm text-slate-500">Photo coming soon</span>
                   </div>
                 </div>
               </div>
@@ -47,17 +50,20 @@ export default function AboutPage() {
 
             {/* Bio */}
             <div>
-              <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
-                Meet the Founder
-              </p>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight mb-2">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="h-px w-8 bg-accent-500/50" />
+                <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+                  Meet the Founder
+                </span>
+              </div>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 tracking-tight mb-2 italic">
                 Jake Schaaf
               </h2>
-              <p className="text-lg text-brand-600 font-medium mb-8">
+              <p className="text-lg text-accent-500 font-medium mb-8">
                 Founder & Principal Consultant
               </p>
 
-              <div className="space-y-5 text-gray-600 leading-relaxed">
+              <div className="space-y-5 text-slate-400 leading-relaxed">
                 <p>
                   After two decades in operations and technology, I&apos;ve seen the
                   same story play out countless times: talented teams buried in
@@ -82,8 +88,8 @@ export default function AboutPage() {
               </div>
 
               {/* Experience highlights */}
-              <div className="mt-10 pt-8 border-t border-gray-200">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-5">
+              <div className="mt-10 pt-8 border-t border-slate-800">
+                <h3 className="text-sm font-semibold text-slate-300 uppercase tracking-wider mb-5">
                   Background
                 </h3>
                 <div className="grid gap-3 sm:grid-cols-2">
@@ -94,12 +100,12 @@ export default function AboutPage() {
                     'Hands-on builder, not just a consultant',
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <span className="flex-shrink-0 w-5 h-5 rounded-full bg-brand-100 flex items-center justify-center mt-0.5">
-                        <svg className="w-3 h-3 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <span className="flex-shrink-0 w-5 h-5 rounded-full bg-accent-500/10 border border-accent-500/20 flex items-center justify-center mt-0.5">
+                        <svg className="w-3 h-3 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
                       </span>
-                      <span className="text-sm text-gray-600">{item}</span>
+                      <span className="text-sm text-slate-400">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -110,18 +116,25 @@ export default function AboutPage() {
       </section>
 
       {/* Company Story */}
-      <section className="bg-gray-50 py-20 md:py-28">
-        <Container size="md">
+      <section className="relative bg-slate-950 py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 lines-pattern opacity-10" />
+        <div className="grain absolute inset-0 pointer-events-none" />
+
+        <Container size="md" className="relative">
           <div className="text-center mb-12">
-            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
-              Our Story
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-8 bg-accent-500/50" />
+              <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+                Our Story
+              </span>
+              <div className="h-px w-8 bg-accent-500/50" />
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 tracking-tight italic">
               Why Procevo AI Exists
             </h2>
           </div>
 
-          <div className="max-w-2xl mx-auto space-y-6 text-lg text-gray-600 leading-relaxed">
+          <div className="max-w-2xl mx-auto space-y-6 text-lg text-slate-400 leading-relaxed">
             <p>
               The name &apos;Procevo&apos; comes from &apos;process&apos; and &apos;evolution.&apos; It&apos;s
               what we do—help your processes evolve from manual, error-prone,
@@ -145,13 +158,20 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="bg-white py-20 md:py-28">
-        <Container size="lg">
+      <section className="relative bg-slate-900 py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="grain absolute inset-0 pointer-events-none" />
+
+        <Container size="lg" className="relative">
           <div className="text-center mb-16">
-            <p className="text-sm font-medium text-brand-500 tracking-widest uppercase mb-4">
-              Our Values
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-8 bg-accent-500/50" />
+              <span className="text-accent-500 text-sm font-medium tracking-widest uppercase">
+                Our Values
+              </span>
+              <div className="h-px w-8 bg-accent-500/50" />
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-slate-100 tracking-tight italic">
               How We Work
             </h2>
           </div>
@@ -191,17 +211,20 @@ export default function AboutPage() {
             ].map((value, index) => (
               <div
                 key={index}
-                className="group relative bg-gray-50 rounded-2xl p-8 border border-transparent hover:border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300"
+                className="group relative bg-slate-800/30 rounded-2xl p-8 border border-slate-700/50 hover:border-accent-500/30 transition-all duration-500"
               >
-                <div className="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300">
-                  {value.icon}
+                <div className="absolute inset-0 rounded-2xl bg-accent-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative">
+                  <div className="w-12 h-12 rounded-xl bg-slate-700/50 border border-slate-600/50 flex items-center justify-center text-accent-500 mb-6 group-hover:bg-accent-500/10 group-hover:border-accent-500/30 transition-all duration-500">
+                    {value.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-slate-100 mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-slate-400 text-[15px] leading-relaxed">
+                    {value.description}
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-gray-600 text-[15px] leading-relaxed">
-                  {value.description}
-                </p>
               </div>
             ))}
           </div>
