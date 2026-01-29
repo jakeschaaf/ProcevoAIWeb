@@ -103,12 +103,12 @@ export function Hero({
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-accent-500/10 border border-accent-500/20 flex items-center justify-center">
                 <svg className="w-5 h-5 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                 </svg>
               </div>
               <div>
-                <p className="text-slate-100 font-semibold">20+ Years</p>
-                <p className="text-sm text-slate-500">In enterprise technology</p>
+                <p className="text-slate-100 font-semibold">Fast Results</p>
+                <p className="text-sm text-slate-500">Working systems in weeks</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
