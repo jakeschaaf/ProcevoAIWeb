@@ -39,12 +39,11 @@ export function Navigation() {
           {/* Logo */}
           <Link
             href="/"
-            className="group flex items-center gap-2"
+            className="group"
           >
             <span className="font-display text-xl md:text-2xl text-slate-100 tracking-tight italic">
-              Procevo
+              Procevo<span className="text-accent-400">.</span>
             </span>
-            <span className="text-accent-500 text-2xl font-light">.</span>
           </Link>
 
           {/* Desktop Navigation */}

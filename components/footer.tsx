@@ -18,11 +18,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-2 mb-4">
+            <Link href="/" className="inline-block mb-4">
               <span className="font-display text-xl text-slate-100 tracking-tight italic">
-                Procevo
+                Procevo<span className="text-accent-400">.</span>
               </span>
-              <span className="text-accent-500 text-2xl font-light">.</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Intelligent automation for mid-market companies. We build custom
