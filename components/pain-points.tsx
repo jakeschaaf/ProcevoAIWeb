@@ -60,10 +60,10 @@ export function PainPoints({
                   {icons[index % icons.length]}
                 </div>
 
-                <h3 className="text-lg font-semibold text-slate-100 mb-3 tracking-tight">
+                <h3 className="text-lg font-semibold text-slate-100 mb-3 tracking-tight text-balance">
                   {point.title}
                 </h3>
-                <p className="text-slate-400 leading-relaxed text-[15px]">
+                <p className="text-slate-400 leading-relaxed text-[15px] text-pretty">
                   {point.description}
                 </p>
 
