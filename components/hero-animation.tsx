@@ -180,12 +180,12 @@ export function HeroAnimation() {
   return (
     <div className="relative w-full max-w-2xl mx-auto">
       {/* Workflow visualization */}
-      <div className="relative bg-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 p-6 overflow-hidden">
+      <div className="relative bg-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 p-6 overflow-hidden h-[280px]">
         {/* Grid background */}
         <div className="absolute inset-0 grid-pattern opacity-30" />
 
         {/* SVG for connections */}
-        <svg className="absolute inset-0 w-full h-full" style={{ minHeight: '240px' }}>
+        <svg className="absolute inset-0 w-full h-full">
           <defs>
             <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="oklch(68% 0.15 50 / 0.3)" />
@@ -255,7 +255,7 @@ export function HeroAnimation() {
         </svg>
 
         {/* Nodes */}
-        <div className="relative" style={{ minHeight: '240px' }}>
+        <div className="relative h-full">
           {nodes.map(node => {
             const isVisible = visibleNodes.has(node.id);
 
@@ -293,7 +293,7 @@ export function HeroAnimation() {
           </div>
           <span className="text-xs text-slate-500 ml-2">automation.ts</span>
         </div>
-        <div className="p-4 font-mono text-sm">
+        <div className="p-4 font-mono text-sm h-[120px]">
           {codeLines.map((line, index) => {
             if (index > currentCodeLine) return null;
 
