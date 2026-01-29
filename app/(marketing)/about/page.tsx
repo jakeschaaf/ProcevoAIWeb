@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Hero } from '@/components/hero';
 import { Container } from '@/components/ui/container';
 import { CTA } from '@/components/cta';
@@ -31,19 +32,18 @@ export default function AboutPage() {
 
         <Container size="lg" className="relative">
           <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-2">
-            {/* Photo placeholder */}
+            {/* Headshot */}
             <div className="mx-auto max-w-md lg:mx-0">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-accent-500/10 to-slate-800 rounded-3xl transform -rotate-3" />
-                <div className="relative flex aspect-square items-center justify-center rounded-2xl bg-slate-800/50 border border-slate-700 overflow-hidden">
-                  <div className="text-center p-8">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-700 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                      </svg>
-                    </div>
-                    <span className="text-sm text-slate-500">Photo coming soon</span>
-                  </div>
+                <div className="absolute -inset-4 bg-gradient-to-br from-accent-500/20 to-slate-800 rounded-3xl transform -rotate-3" />
+                <div className="relative aspect-square rounded-2xl overflow-hidden border border-slate-700/50">
+                  <Image
+                    src="/images/jake-headshot.jpg"
+                    alt="Jake Schaaf - Founder of Procevo AI"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
               </div>
             </div>
