@@ -27,6 +27,7 @@ export default function Home() {
         primaryCTALink="/contact"
         secondaryCTA="See How We Work"
         secondaryCTALink="/services"
+        showAnimation
       />
       <PainPoints
         sectionTitle="Sound familiar?"
