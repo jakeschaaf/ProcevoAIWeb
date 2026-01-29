@@ -7,7 +7,7 @@ import { Container } from '@/components/ui/container';
 import { invoiceSplitterCaseStudy } from '@/data/case-studies';
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Our Services | Procevo AI',
   description:
     'Custom automation projects and consulting for mid-market companies. We help you eliminate manual work and streamline operations.',
   openGraph: {

@@ -5,7 +5,7 @@ import { Container } from '@/components/ui/container';
 import { CTA } from '@/components/cta';
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'About Jake Schaaf | Procevo AI',
   description:
     'Meet Jake Schaaf, founder of Procevo AI, with 20+ years of experience helping companies streamline operations and eliminate manual work.',
   openGraph: {
