@@ -64,8 +64,8 @@ export function Hero({
               {subheadline}
             </p>
 
-            <div className="mt-12 flex flex-col sm:flex-row gap-4 items-start">
-              <Button href={primaryCTALink} variant="primary" size="lg">
+            <div className="mt-12 flex flex-col gap-3 max-w-md">
+              <Button href={primaryCTALink} variant="primary" size="lg" className="w-full justify-center">
                 {primaryCTA}
                 <svg
                   className="ml-2 w-4 h-4"
@@ -82,22 +82,10 @@ export function Hero({
                 </svg>
               </Button>
               {secondaryCTA && secondaryCTALink && (
-                <Button href={secondaryCTALink} variant="secondary" size="lg">
+                <Button href={secondaryCTALink} variant="secondary" size="lg" className="w-full justify-center">
                   {secondaryCTA}
                 </Button>
               )}
-            </div>
-
-            {/* Trust indicators */}
-            <div className="mt-16 pt-8 border-t border-slate-800">
-              <p className="text-sm text-slate-500 mb-4">Trusted by operations teams at</p>
-              <div className="flex flex-wrap gap-8 items-center text-slate-600">
-                <span className="text-sm font-medium tracking-wide">Mid-Market Companies</span>
-                <span className="hidden sm:block w-px h-4 bg-slate-800" />
-                <span className="text-sm font-medium tracking-wide">20+ Years Experience</span>
-                <span className="hidden sm:block w-px h-4 bg-slate-800" />
-                <span className="text-sm font-medium tracking-wide">Custom Solutions</span>
-              </div>
             </div>
           </div>
 
@@ -107,6 +95,18 @@ export function Hero({
               <HeroAnimation />
             </div>
           )}
+        </div>
+
+        {/* Trust indicators - full width below grid */}
+        <div className="mt-20 pt-8 border-t border-slate-800">
+          <p className="text-sm text-slate-500 mb-4">Trusted by operations teams at</p>
+          <div className="flex flex-wrap gap-x-8 gap-y-3 items-center text-slate-600">
+            <span className="text-sm font-medium tracking-wide">Mid-Market Companies</span>
+            <span className="hidden sm:block w-px h-4 bg-slate-800" />
+            <span className="text-sm font-medium tracking-wide">20+ Years Experience</span>
+            <span className="hidden sm:block w-px h-4 bg-slate-800" />
+            <span className="text-sm font-medium tracking-wide">Custom Solutions</span>
+          </div>
         </div>
       </Container>
 
