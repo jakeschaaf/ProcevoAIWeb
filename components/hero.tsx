@@ -108,7 +108,7 @@ export function Hero({
               </div>
               <div>
                 <p className="text-slate-100 font-semibold">20+ Years</p>
-                <p className="text-sm text-slate-500">Building software systems</p>
+                <p className="text-sm text-slate-500">In enterprise technology</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
