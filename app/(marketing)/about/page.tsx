@@ -20,7 +20,7 @@ export default function AboutPage() {
     <>
       <Hero
         headline="Built by Someone Who Gets It"
-        subheadline="After 20+ years helping companies streamline operations, I started Procevo AI to bring enterprise-level automation to mid-market teams who need it most."
+        subheadline="After 20+ years helping companies streamline operations, I started Procevo AI to bring enterprise-level automation to growing teams who need it most."
         primaryCTA="Let's Talk"
         primaryCTALink="/contact"
       />
@@ -72,8 +72,8 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  I started Procevo AI because I got tired of watching mid-market
-                  companies struggle with problems that shouldn&apos;t exist in 2026.
+                  I started Procevo AI because I got tired of watching growing
+                  businesses struggle with problems that shouldn&apos;t exist in 2026.
                   The tools to eliminate manual data entry, connect your systems,
                   and free up your team&apos;s time are here—but most companies don&apos;t
                   have the bandwidth or expertise to implement them.
@@ -142,7 +142,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              Most mid-market companies know they&apos;re leaving money on the table
+              Most growing businesses know they&apos;re leaving money on the table
               with inefficient processes. They see competitors moving faster and
               wonder how. The answer isn&apos;t working harder—it&apos;s working smarter.
             </p>

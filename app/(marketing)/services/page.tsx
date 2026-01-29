@@ -9,11 +9,11 @@ import { invoiceSplitterCaseStudy } from '@/data/case-studies';
 export const metadata: Metadata = {
   title: 'Our Services | Procevo AI',
   description:
-    'Custom automation projects and consulting for mid-market companies. We help you eliminate manual work and streamline operations.',
+    'Custom automation projects and consulting for growing businesses. We help you eliminate manual work and streamline operations.',
   openGraph: {
     title: 'Services - Procevo AI',
     description:
-      'Custom automation projects and consulting for mid-market companies.',
+      'Custom automation projects and consulting for growing businesses.',
   },
 };
 

@@ -7,11 +7,11 @@ import { Container } from '@/components/ui/container';
 import { invoiceSplitterCaseStudy } from '@/data/case-studies';
 
 export const metadata: Metadata = {
-  title: 'Custom Automation for Mid-Market Companies | Procevo AI',
+  title: 'Custom Automation for Growing Businesses | Procevo AI',
   description:
     'Stop losing time to manual processes. Procevo AI helps stretched teams automate repetitive tasks and integrate disconnected systems.',
   openGraph: {
-    title: 'Procevo AI - Custom Automation for Mid-Market Companies',
+    title: 'Procevo AI - Custom Automation for Growing Businesses',
     description:
       'Stop losing time to manual processes. We help stretched teams automate repetitive tasks.',
   },
@@ -22,7 +22,7 @@ export default function Home() {
     <main>
       <Hero
         headline="Stop losing time to manual processes"
-        tagline="AI-powered automation for mid-market teams"
+        tagline="AI-powered automation for growing teams"
         subheadline="Your best people are losing hours to tasks that don't need human judgment. We build custom AI systems that handle the thinking, not just the clicking."
         primaryCTA="Schedule a Free Consultation"
         primaryCTALink="/contact"

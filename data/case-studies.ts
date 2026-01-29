@@ -4,7 +4,7 @@ export type { CaseStudyCardProps };
 
 export const invoiceSplitterCaseStudy: CaseStudyCardProps = {
   title: 'Invoice Splitter Automation',
-  client: 'Mid-Market Manufacturing Company',
+  client: 'Manufacturing Company',
   problem:
     'Manual invoice processing where multi-invoice PDFs needed to be split and routed individually. NetSuite AP module only accepts one invoice per file, requiring manual splitting and emailing—costing 12+ hours per month.',
   solution:

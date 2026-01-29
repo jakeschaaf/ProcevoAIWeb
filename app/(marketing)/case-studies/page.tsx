@@ -8,11 +8,11 @@ import { allCaseStudies } from '@/data/case-studies';
 export const metadata: Metadata = {
   title: 'Case Studies | Procevo AI',
   description:
-    'Real automation projects with measurable results. See how we help mid-market companies save time and eliminate errors.',
+    'Real automation projects with measurable results. See how we help growing businesses save time and eliminate errors.',
   openGraph: {
     title: 'Case Studies - Procevo AI',
     description:
-      'Real automation projects with measurable results for mid-market companies.',
+      'Real automation projects with measurable results for growing businesses.',
   },
 };
 

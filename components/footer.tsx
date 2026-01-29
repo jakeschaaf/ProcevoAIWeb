@@ -24,7 +24,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Intelligent automation for mid-market companies. We build custom
+              Intelligent automation for growing businesses. We build custom
               systems that eliminate repetitive work and connect disconnected
               tools.
             </p>

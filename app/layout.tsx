@@ -17,7 +17,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Procevo AI | Intelligent Automation for Mid-Market Companies",
+  title: "Procevo AI | Intelligent Automation for Growing Businesses",
   description: "We build custom AI and automation systems that eliminate repetitive work, connect disconnected systems, and free your team to focus on growth.",
 };
 
