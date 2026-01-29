@@ -19,6 +19,7 @@ export async function sendTelegramNotification(
     `Email: ${data.email}`,
     data.name ? `Name: ${data.name}` : null,
     data.company ? `Company: ${data.company}` : null,
+    data.phone ? `Phone: ${data.phone}` : null,
     "",
     "Message:",
     data.message,

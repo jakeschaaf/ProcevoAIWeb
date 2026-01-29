@@ -148,6 +148,22 @@ export function ContactForm() {
 
       <div>
         <label
+          htmlFor="phone"
+          className="block text-sm font-medium text-slate-300 mb-1.5"
+        >
+          Phone
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          {...register('phone')}
+          className="w-full px-4 py-3 rounded-lg bg-slate-800/50 border border-slate-700 text-slate-100 placeholder-slate-500 focus:ring-2 focus:ring-accent-500/50 focus:border-accent-500 transition-all duration-300"
+          placeholder="Your phone number"
+        />
+      </div>
+
+      <div>
+        <label
           htmlFor="message"
           className="block text-sm font-medium text-slate-300 mb-1.5"
         >
