@@ -34,7 +34,7 @@ export default function Home() {
         sectionTitle="Sound familiar?"
         points={[
           {
-            title: 'Your Team is Stretched Thin',
+            title: 'Your Best People Are Stretched Too Thin',
             description:
               "Key people are buried in tasks that don't need human judgment. They're too busy putting out fires to work on what actually grows the business.",
           },
