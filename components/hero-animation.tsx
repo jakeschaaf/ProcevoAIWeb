@@ -21,7 +21,7 @@ const nodes: Node[] = [
   { id: 'trigger', x: 50, y: 120, label: 'Webhook', icon: 'trigger', delay: 0 },
   { id: 'parse', x: 180, y: 60, label: 'Extract Data', icon: 'code', delay: 0.3 },
   { id: 'validate', x: 180, y: 180, label: 'Validate', icon: 'data', delay: 0.4 },
-  { id: 'ai', x: 310, y: 120, label: 'LLM Agent', icon: 'ai', delay: 0.7 },
+  { id: 'ai', x: 310, y: 120, label: 'AI Agent', icon: 'ai', delay: 0.7 },
   { id: 'output', x: 440, y: 120, label: 'Send Result', icon: 'output', delay: 1.0 },
 ];
 
@@ -36,7 +36,7 @@ const connections: Connection[] = [
 const codeLines = [
   'const data = await webhook.receive();',
   'const context = await vectorDB.query(data);',
-  'const result = await llm.analyze(context);',
+  'const result = await ai.analyze(context);',
   'await slack.notify(result.summary);',
 ];
 
