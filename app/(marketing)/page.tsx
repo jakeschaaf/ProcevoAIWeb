@@ -22,7 +22,7 @@ export default function Home() {
     <main>
       <Hero
         headline="Stop losing time to manual processes"
-        subheadline="Your team is stretched thin. We help mid-market companies automate repetitive tasks and integrate disconnected systems—so you can focus on growth instead of data entry."
+        subheadline="Your best people are losing hours to tasks that don't need human judgment. We build the automation that gets that time back."
         primaryCTA="Schedule a Free Consultation"
         primaryCTALink="/contact"
         secondaryCTA="See How We Work"
