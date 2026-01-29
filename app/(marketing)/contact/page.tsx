@@ -101,7 +101,7 @@ export default function ContactPage() {
                 <h3 className="font-semibold text-slate-100">LinkedIn</h3>
               </div>
               <a
-                href="https://www.linkedin.com/company/procevo"
+                href="https://www.linkedin.com/in/jakeschaaf/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent-500 hover:text-accent-400 font-medium transition-colors"

@@ -65,7 +65,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/company/procevo"
+                  href="https://www.linkedin.com/in/jakeschaaf/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-slate-400 hover:text-accent-500 transition-colors duration-300"
