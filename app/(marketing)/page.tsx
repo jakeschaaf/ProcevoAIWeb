@@ -22,7 +22,8 @@ export default function Home() {
     <main>
       <Hero
         headline="Stop losing time to manual processes"
-        subheadline="Your best people are losing hours to tasks that don't need human judgment. We build the automation that gets that time back."
+        tagline="Custom AI and automation systems for mid-market teams"
+        subheadline="Your best people are losing hours to tasks that don't need human judgment. We build custom AI systems that handle the thinking, not just the clicking."
         primaryCTA="Schedule a Free Consultation"
         primaryCTALink="/contact"
         secondaryCTA="See How We Work"

@@ -19,9 +19,9 @@ type Connection = {
 
 const nodes: Node[] = [
   { id: 'trigger', x: 50, y: 120, label: 'Webhook', icon: 'trigger', delay: 0 },
-  { id: 'parse', x: 180, y: 60, label: 'Parse Data', icon: 'code', delay: 0.3 },
+  { id: 'parse', x: 180, y: 60, label: 'Extract Data', icon: 'code', delay: 0.3 },
   { id: 'validate', x: 180, y: 180, label: 'Validate', icon: 'data', delay: 0.4 },
-  { id: 'ai', x: 310, y: 120, label: 'AI Process', icon: 'ai', delay: 0.7 },
+  { id: 'ai', x: 310, y: 120, label: 'LLM Agent', icon: 'ai', delay: 0.7 },
   { id: 'output', x: 440, y: 120, label: 'Send Result', icon: 'output', delay: 1.0 },
 ];
 
@@ -35,9 +35,9 @@ const connections: Connection[] = [
 
 const codeLines = [
   'const data = await webhook.receive();',
-  'const parsed = transform(data);',
-  'const result = await ai.process(parsed);',
-  'await sendNotification(result);',
+  'const context = await vectorDB.query(data);',
+  'const result = await llm.analyze(context);',
+  'await slack.notify(result.summary);',
 ];
 
 function NodeIcon({ type }: { type: Node['icon'] }) {
@@ -258,6 +258,7 @@ export function HeroAnimation() {
         <div className="relative h-full">
           {nodes.map(node => {
             const isVisible = visibleNodes.has(node.id);
+            const isAI = node.icon === 'ai';
 
             return (
               <div
@@ -267,12 +268,26 @@ export function HeroAnimation() {
                 }`}
                 style={{ left: node.x, top: node.y }}
               >
-                <div className="bg-slate-800 border border-slate-600 rounded-lg p-3 shadow-lg shadow-black/20 hover:border-accent-500/50 transition-colors group">
+                {/* Glow effect for AI node */}
+                {isAI && isVisible && (
+                  <div className="absolute inset-0 -m-2 bg-accent-500/20 rounded-xl blur-xl animate-pulse" />
+                )}
+                <div className={`relative bg-slate-800 border rounded-lg p-3 shadow-lg shadow-black/20 transition-colors group ${
+                  isAI
+                    ? 'border-accent-500/50 shadow-accent-500/20'
+                    : 'border-slate-600 hover:border-accent-500/50'
+                }`}>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-md bg-accent-500/10 border border-accent-500/20 flex items-center justify-center text-accent-500 group-hover:bg-accent-500/20 transition-colors">
+                    <div className={`w-8 h-8 rounded-md flex items-center justify-center transition-colors ${
+                      isAI
+                        ? 'bg-accent-500/20 border border-accent-500/40 text-accent-400'
+                        : 'bg-accent-500/10 border border-accent-500/20 text-accent-500 group-hover:bg-accent-500/20'
+                    }`}>
                       <NodeIcon type={node.icon} />
                     </div>
-                    <span className="text-xs font-medium text-slate-300 whitespace-nowrap">
+                    <span className={`text-xs font-medium whitespace-nowrap ${
+                      isAI ? 'text-accent-400' : 'text-slate-300'
+                    }`}>
                       {node.label}
                     </span>
                   </div>

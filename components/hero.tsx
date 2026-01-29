@@ -4,6 +4,7 @@ import { HeroAnimation } from '@/components/hero-animation';
 
 type HeroProps = {
   headline: string;
+  tagline?: string;
   subheadline: string;
   primaryCTA: string;
   primaryCTALink: string;
@@ -14,6 +15,7 @@ type HeroProps = {
 
 export function Hero({
   headline,
+  tagline,
   subheadline,
   primaryCTA,
   primaryCTALink,
@@ -52,7 +54,13 @@ export function Hero({
               <span className="italic">{headline}</span>
             </h1>
 
-            <p className="mt-8 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
+            {tagline && (
+              <p className="mt-4 text-lg md:text-xl text-accent-500 font-medium">
+                {tagline}
+              </p>
+            )}
+
+            <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
               {subheadline}
             </p>
 
